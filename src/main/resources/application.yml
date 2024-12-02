@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: postgres
+    password: test@123
+    url: jdbc:postgresql://localhost:5432/chatbot
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    database-platform:
+      org.hibernate.dialect.PostgreSQLDialect
+    database:
+      postgresql
+  flyway:
+    enabled: true
+  security:
+    user:
+      name: root
+      password: root
